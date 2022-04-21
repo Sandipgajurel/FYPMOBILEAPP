@@ -15,7 +15,7 @@ const FormSelectorBtn = ({ title, onPress, backgroundColor, style }) => {
       </View>
     </TouchableWithoutFeedback>
   );
-};
+};cd
 
 const styles = StyleSheet.create({
   container: {

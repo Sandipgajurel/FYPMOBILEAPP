@@ -1,5 +1,5 @@
 import React from 'react'
-import { FlatList, StyleSheet, Text, Image, TextInput, View, ScrollView } from 'react-native';
+import { FlatList, StyleSheet, Text, Image, TextInput, View, ScrollView, ImageBackground } from 'react-native';
 import { useState, useEffect } from 'react';
 import FormContainer from './FormContainer';
 import {Button, Card } from 'react-native-paper';
@@ -37,8 +37,9 @@ function NoPress(){
         <View style={{alignContent:'center',alignItems:'center', textAlign:'center'}}>
           {/* <Image
             resizeMode="cover"
-            source={`http://192.168.1.66:3001/${item.image}`}
+            source={'http://localhost:3001/'+ item.image }
           /> */}
+          {/* <ImageBackground resizeMode="cover" style={{width: '100%', height: '100%'}} source={`http://192.168.1.66:3001/${item.image} `} /> */}
           <Text key={item.name} style={{fontSize:20, fontWeight:'bold'}} >{item.name}</Text>
           <Text key={item.price} style={{fontSize:15, fontWeight:'bold'}} >{item.price}</Text>
           <Text key={item.description} style={{fontSize:13 }} >{item.description}</Text>
